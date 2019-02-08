@@ -7,7 +7,6 @@
  *
  *  Return: Always 0 (Success)
  */
-
 int main(void)
 {
 	int n;
@@ -19,7 +18,7 @@ int main(void)
 
 	if (last > 5)
 	{
-		printf("is %i and is greater then 5\n", last);
+		printf("is %i and is greater than 5\n", last);
 	}
 
 	else if (last == 0)
