@@ -15,20 +15,21 @@ int main(void)
 	n = rand() - RAND_MAX / 2;
 	printf("Last digit of %i ", n);
 	int last = n % 10;
+	printf("is");
 
 	if (last > 5)
 	{
-		printf("is %i and is greater than 5\n", last);
+		printf(" %i and is greater than 5\n", last);
 	}
 
 	else if (last == 0)
 	{
-		printf("is %i and is 0\n", last);
+		printf(" %i and is 0\n", last);
 	}
 
 	else if (last < 6)
 	{
-		printf("is %i and is less than 6 and not 0\n", last);
+		printf(" %i and is less than 6 and not 0\n", last);
 	}
 
 	return (0);
