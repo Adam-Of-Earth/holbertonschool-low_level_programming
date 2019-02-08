@@ -29,7 +29,7 @@ int main(void)
 
 	else if (last < 6)
 	{
-		printf(" %i and is less than 6\n", last);
+		printf(" %i and is less than 6 and not 0\n", last);
 	}
 
 	return (0);
