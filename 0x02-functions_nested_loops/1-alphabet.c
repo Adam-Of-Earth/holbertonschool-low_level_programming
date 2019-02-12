@@ -1,17 +1,17 @@
-#include <stdio.h>
+#include "holberton.h"
 /**
- *   main - Entry point
+ *   print_alphabet - prints out the alphabet useing _putchar
  *
- *  Return: Always 0 (Success)
+ *  Return: void
  */
 
-void print_alphabet(void);
+void print_alphabet(void)
 {
 	char ch;
 
 	for (ch = 'a'; ch <= 'z'; ch++)
 	{
-		putchar(ch);
+		_putchar(ch);
 	}
-	putchar ('\n');
+	_putchar ('\n');
 }
