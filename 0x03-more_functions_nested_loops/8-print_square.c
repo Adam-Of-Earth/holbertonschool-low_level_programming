@@ -7,6 +7,7 @@
 void print_square(int size)
 {
 	int size2 = size;
+
 	for (; size2 > 0; size2--)
 	{
 		int side = size;
