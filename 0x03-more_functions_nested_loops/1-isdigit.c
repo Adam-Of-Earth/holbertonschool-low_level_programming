@@ -1,8 +1,8 @@
 #include "holberton.h"
 /**
- * main - check the code for Holberton School students.
- *
- * Return: Always 0.
+ * _isdigit - check if c is a number
+ *@c: imput
+ * Return: 1 if digit or else 0
  */
 int _isdigit(int c)
 {
