@@ -1,8 +1,8 @@
 #include <stdio.h>
 /**
- * Fizz_Buzz - counts to 100 replacing 3 and 5s with Fizz Buzz
+ * main - counts to 100 replacing 3 and 5s with Fizz Buzz
  *
- * Return - 0 (success)
+ * Return:  int 0 (success)
  */
 int main(void)
 {
