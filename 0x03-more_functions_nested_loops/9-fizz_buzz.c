@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "holberton.h"
 /**
  * main - counts to 100 replacing 3 and 5s with Fizz Buzz
  *
