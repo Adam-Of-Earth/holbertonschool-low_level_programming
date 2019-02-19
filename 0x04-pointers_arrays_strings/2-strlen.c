@@ -4,7 +4,7 @@
  *@s: pointer imput
  * Return: length of strning.
  */
-int _strlen(char*s)
+int _strlen(char *s)
 {
 	int i, legth = 0;
 
