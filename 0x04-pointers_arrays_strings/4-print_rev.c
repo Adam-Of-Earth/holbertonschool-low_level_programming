@@ -2,7 +2,7 @@
 
 /**
  * print_rev - prints a string backwords.
- *@s: string to reverce
+ * @s: string to reverce
  * Return: void
  */
 void print_rev(char *s)
@@ -12,8 +12,8 @@ void print_rev(char *s)
 
 	for (n = 0; s[n]; n++)
 	{
-		i = n;
 	}
+	i = n - 1;
 	while (i >= 0)
 	{
 		l = s[i];
