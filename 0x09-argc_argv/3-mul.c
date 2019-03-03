@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include "holberton.h"
 /**
  * main - multiplies two numbers
@@ -8,11 +9,14 @@
  */
 int main(int argc, char *argv[])
 {
-	int sum = 0;
+	int i, sum = 1;
 
 	if (argc == 3)
 	{
-		sum = *argv[1] * *argv[2];
+		for (i = 1; i < argc; i++)
+		{
+			sum *= atoi(argv[i]);
+		}
 		printf("%i\n", sum);
 		return (0);
 	}
