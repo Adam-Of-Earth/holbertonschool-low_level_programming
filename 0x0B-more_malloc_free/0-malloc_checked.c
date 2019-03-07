@@ -11,7 +11,7 @@ void *malloc_checked(unsigned int b)
 	int *bot;
 
 	bot = malloc(b);
-	if (b == '\0')
+	if (bot == NULL)
 	{
 		exit(98);
 	}
