@@ -9,7 +9,7 @@
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	char *bot,*counter = s1;
+	char *bot, *counter = s1;
 	int i, len = 0, num = 0;
 
 	if (s1 == NULL)
@@ -23,7 +23,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	len = len + (n + 1);
 	bot = malloc(sizeof(char) * len);
 	counter = bot;
-	for (i = 0; s1[i];i++)
+	for (i = 0; s1[i]; i++)
 	{
 		counter[i] = s1[i];
 	}
