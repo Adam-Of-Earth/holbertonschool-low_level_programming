@@ -10,7 +10,7 @@
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *bot, *counter = s1, *counter2 = s2;
-	unsigned int i, len, len2, num = 0;
+	unsigned int len, len2;
 
 	if (s1 == NULL)
 		s1 = "";
@@ -32,20 +32,18 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		len = len2 + len + 1;
 	}
-	bot = malloc(sizeof(char) * len);
-	counter = bot;
+	counter = bot = malloc(sizeof(char) * len);
 	if (bot == NULL)
 	{
 		return (NULL);
 	}
-	for (i = 0; s1[i]; i++)
+	for (; *s1 != '\0'; s1++)
 	{
-		counter[i] = s1[i];
+		*(counter++) = *s1;
 	}
-	for (; i < len; i++)
+	for (; *s2 != '\0'; s2++)
 	{
-		counter[i] = s2[num];
-		num++;
+		*(counter++) = *s2++;
 	}
 	return (bot);
 }
