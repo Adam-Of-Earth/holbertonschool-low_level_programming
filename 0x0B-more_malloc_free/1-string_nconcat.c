@@ -23,6 +23,10 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	len = len + (n + 1);
 	bot = malloc(sizeof(char) * len);
 	counter = bot;
+	if (bot == NULL)
+	{
+		return (NULL);
+	}
 	for (i = 0; s1[i]; i++)
 	{
 		counter[i] = s1[i];
