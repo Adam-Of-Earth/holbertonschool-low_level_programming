@@ -9,18 +9,29 @@
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	char *bot, *counter = s1;
-	int i, len = 0, num = 0;
+	char *bot, *counter = s1, *counter2 = s2;
+	unsigned int i, len, len2, num = 0;
 
 	if (s1 == NULL)
 		s1 = "";
 	if (s2 == NULL)
 		s2 = "";
-	for (; *counter; counter++)
+	for (len = 0; *counter; counter++)
 	{
 		len++;
 	}
-	len = len + (n + 1);
+	for (len2 = 0; *counter2; counter2++)
+	{
+		len2++;
+	}
+	if (n < len2)
+	{
+		len = len + (n + 1);
+	}
+	else
+	{
+		len = len2 + len + 1;
+	}
 	bot = malloc(sizeof(char) * len);
 	counter = bot;
 	if (bot == NULL)
