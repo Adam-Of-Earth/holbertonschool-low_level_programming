@@ -1,1 +1,1 @@
-//my projects for holberton school
+// my projects about linked lists
