@@ -1,7 +1,13 @@
 #include <stdlib.h>
 #include "lists.h"
 
-int delete_node(listint_t **head, unsigned int index)
+/**
+ * delete_nodeint_at_index - delete node at index
+ * @head: head node
+ * @index: where to delete
+ * Return: 1 (succes) -1 (fail)
+ */
+int delete_nodeint_at_index(listint_t **head, unsigned int index)
 {
 	listint_t *current, *previous;
 
@@ -22,5 +28,6 @@ int delete_node(listint_t **head, unsigned int index)
 	{
 		previous->next = current->next;
 	}
-	free(curent);
+	free(current);
 	return (1);
+}
