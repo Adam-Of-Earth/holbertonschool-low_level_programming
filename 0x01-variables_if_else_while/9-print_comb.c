@@ -4,7 +4,6 @@
  * main - count 0 to 9 with sperators
  *
  * Return: 0 (sucsses)
- *
  */
 int main(void)
 {
