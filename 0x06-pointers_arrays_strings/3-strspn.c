@@ -2,7 +2,8 @@
 /**
  * _strspn - re
  * @s: string
- *
+ * @accept: string to mesure
+ * Return: number of char
  */
 unsigned int _strspn(char *s, char *accept)
 {
