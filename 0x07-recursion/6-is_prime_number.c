@@ -1,10 +1,10 @@
 #include "holberton.h"
 
 /**
+ * is_prime_number - tests to see if a number is prime
+ * @n: number to test
  *
- *
- *
- *
+ * Return: 1 (sucsses) 0 (falure)
  */
 int is_prime_number(int n)
 {
@@ -34,4 +34,5 @@ int is_prime_number(int n)
 		}
 		return (1);
 	}
+	return (1);
 }
