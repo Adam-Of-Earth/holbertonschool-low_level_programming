@@ -17,7 +17,9 @@ char *create_array(unsigned int size, char c)
 		return (NULL);
 	}
 	bot = malloc(size * sizeof(char));
-	for (i = 0; size >= i; i++)
+	if (bot == NULL)
+		return (NULL);
+	for (i = 0; i <= size; i++)
 	{
 		bot[i] = c;
 	}
