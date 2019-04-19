@@ -8,11 +8,22 @@
  */
 int main(void)
 {
-	char s[] = "Expect the best. Prepare for the worst. Capitalize on what comes.\nhello world! hello-world 0123456hello world\thello world.hello world\n";
+	char s[] = "ROT13 (\"rotate by 13 places\", sometimes hyphenated ROT-13) is a simple letter substitution cipher.\n";
 	char *p;
 
-	p = cap_string(s);
+	p = rot13(s);
 	printf("%s", p);
+	printf("------------------------------------\n");
+	printf("%s", s);
+	printf("------------------------------------\n");
+	p = rot13(s);
+	printf("%s", p);
+	printf("------------------------------------\n");
+	printf("%s", s);
+	printf("------------------------------------\n");
+	p = rot13(s);
+	printf("%s", p);
+	printf("------------------------------------\n");
 	printf("%s", s);
 	return (0);
 }
