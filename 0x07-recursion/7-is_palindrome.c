@@ -1,46 +1,42 @@
-#include "holberton.h"
-
 /**
+ * do_is_palindrome - test whether left and right pointers match, then continue
+ * @left: pointer to left side of string
+ * @right: pointer to right side of string, mirroring left
  *
- *
- *
- *
+ * Return: 1 if string is palindrome, 0 if it isn't
  */
-
-int is_palindrome(char *s)
+int do_is_palindrome(char *left, char *right)
 {
-	int end, n;
-	end = _end_of_string(s);
-	if(end == 0)
-		return(1);
-	n = is_pal_check(end, s, 0);
-	return (n);
+	if (left >= right)
+		return (1);
+	else if (*left != *right)
+		return (0);
+	return (do_is_palindrome(left + 1, right - 1));
 }
 
 /**
+ * _strlen - return length of string
+ * @str: string to check
  *
- *
- *
- *
+ * Return: length of str
  */
-int _end_of_string(char *s)
+int _strlen(char *str)
 {
-	if (*s)
-	{
-		return (_end_of_string(s + 1));
-	}
+	if (*str)
+		return (_strlen(str + 1) + 1);
 	return (0);
 }
 
-int is_pal_check(int end, char *s, char begin)
+/**
+ * is_palindrome - test whether a string is a palindrome
+ * @str: string to check
+ *
+ * Return: 1 if str is a palindrome, 0 if it isn't
+ */
+int is_palindrome(char *str)
 {
-	if(begin >= end)
-	{
-		return (1);
-	}
-	if (s[begin] != s[end])
-	{
-		return (0);
-	}
-	return(is_pal_check((end - 1), s, (begin + 1)));
+	int len;
+
+	len = _strlen(str);
+	return (do_is_palindrome(str, str + len - 1));
 }
