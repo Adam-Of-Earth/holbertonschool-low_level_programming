@@ -17,7 +17,9 @@ char *cap_string(char *s)
 		}
 		while (delim[index2] != '\0')
 		{
-			if (s[index] == delim[index2] && s[index + 1] >= 'a' && s[index + 1] <= 'z')
+			if (s[index] == delim[index2]
+			    && s[index + 1] >= 'a'
+			    && s[index + 1] <= 'z')
 			{
 				s[index + 1] -= 32;
 			}
