@@ -12,7 +12,7 @@ int sqrt_math(int n, int i)
 	{
 		return (i);
 	}
-	if (i * i < n)
+	else if (i * i < n)
 	{
 		return (sqrt_math(n, i + 1));
 	}
