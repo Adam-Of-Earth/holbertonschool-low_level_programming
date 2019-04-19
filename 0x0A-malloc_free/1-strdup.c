@@ -25,7 +25,7 @@ char *_strdup(char *str)
 		bot[i] = str[i];
 	}
 	return (bot);
-	free (bot);
+	free(bot);
 }
 
 /**
