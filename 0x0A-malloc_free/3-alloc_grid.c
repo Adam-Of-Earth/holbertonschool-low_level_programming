@@ -1,4 +1,4 @@
-#include "holbeton.h"
+#include "holberton.h"
 
 /**
  * alloc_grid - makes space for 2d array
