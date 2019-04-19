@@ -1,0 +1,29 @@
+#include "holberton.h"
+
+/**
+ * _atoi - turns and sting into to ints
+ * @s: string to change
+ *
+ * Return: int version of s
+ */
+int _atoi(char *s)
+{
+	char *hold;
+	unsigned char neg = 0;
+	int ret = 0;
+
+	for (hold = s; (*hold < '0' || *hold > '9') && *hold; hold++)
+	{
+		if (*hold == '-')
+			neg = !neg;
+	}
+	for (; *hold >= '0' && *hold <= '9'; hold++)
+	{
+		ret *= 10;
+		if (neg)
+			ret -= *hold - '0';
+		else
+			ret += *hold - '0';
+	}
+	return (ret);
+}
