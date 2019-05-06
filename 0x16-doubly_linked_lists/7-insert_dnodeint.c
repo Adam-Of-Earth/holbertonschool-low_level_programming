@@ -3,7 +3,7 @@
 /**
  * insert_dnodeint_at_index - crates node at index
  * @h: head node
- * @inx: location of node
+ * @idx: location of node
  * @n: value of node
  *
  * Return: addres of node
