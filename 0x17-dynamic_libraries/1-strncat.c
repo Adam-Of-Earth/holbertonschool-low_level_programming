@@ -10,7 +10,7 @@ char *_strncat(char *dest, char *src, int n)
 {
 	int x, y, len;
 
-	len = _strlen(dest);
+	len = mystrlen(dest);
 	x = len;
 	for (y = 0; (y < n) && (src[y]); y++)
 	{
@@ -25,7 +25,7 @@ char *_strncat(char *dest, char *src, int n)
  * @s: string
  * Return: length
  */
-int _strlen(char *s)
+int mystrlen(char *s)
 {
 	int i;
 
