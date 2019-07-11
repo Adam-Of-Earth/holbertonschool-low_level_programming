@@ -4,8 +4,8 @@ OBJ = $(subst .c,.o,holberton.c main.c)
 NAME = holberton
 RM = rm -f
 
-all: $(OBJ)
-	$(CC) $(OBJ) -o $(NAME)
+all: ${OBJ}
+	${CC} ${OBJ} -o ${NAME}
 clean:
 	${RM} *~ ${NAME}
 oclean:
